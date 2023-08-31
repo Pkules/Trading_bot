@@ -1,0 +1,58 @@
+# Welcome to the trading_bot readme!
+
+(\_/)                 
+( •,•)
+(")_(")
+
+# Arbitrage Trading Bot
+
+This project is an arbitrage trading bot that aims to identify and execute low-risk arbitrage opportunities between different cryptocurrency 
+pairs on multiple exchanges. The bot is designed to minimize risk by ensuring a price threshold is met before executing trades.
+
+## Features
+
+- **Modular Design**: The bot is organized into separate modules for risk management, trading strategy, and execution, making it easy to maintain and extend.
+- **Sophisticated Strategies**: The bot uses advanced trading strategies such as Moving Average Crossover to identify potential arbitrage opportunities.
+- **Risk Management**: Incorporates risk management techniques to minimize exposure and ensure trades align with predefined risk parameters.
+- **Real-time Notifications**: Sends real-time notifications to a Discord channel using the `discord.py` library.
+- **Order Book Analysis**: Utilizes order book analysis to estimate sell prices with a safety margin.
+- **Symbol Flexibility**: Easily configure the bot to trade specific symbol pairs on different exchanges.
+
+## Getting Started
+
+1. Clone this repository:
+
+   ```sh
+   git clone https://github.com/yourusername/arbitrage-trading-bot.git
+
+Install the required dependencies:
+
+sh 
+Copy code
+
+pip install -r requirements.txt
+
+Set up your Binance API keys:
+
+Replace API_KEY and API_SECRET in utils/settings.py with your own API keys.
+
+Configure the bot:
+
+Adjust risk management parameters, price thresholds, and symbol pairs in bot/bot.py.
+
+Run the bot:
+
+sh
+Copy code
+python bot/bot.py
+Monitor and customize:
+
+Keep an eye on the bot's performance and customize trading strategies and risk parameters as needed.
+
+Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create an issue or submit a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Disclaimer: This trading bot is provided for educational and informational purposes only. Use it at your own risk. Trading cryptocurrencies involves risks and should be approached with caution.
